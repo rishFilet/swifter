@@ -25,11 +25,6 @@ let initialStubs = [
     HTTPStubInfo(url: "/1/user", jsonFilename: "user", method: .GET),
     HTTPStubInfo(url: "/authorize", jsonFilename: "authorize", method: .POST),
     HTTPStubInfo(url: "/token", jsonFilename: "token", method: .POST),
-    HTTPStubInfo(url: "/1/thermostat", jsonFilename: "tstat", method: .GET),
-    HTTPStubInfo(url: "/1/thermostatSummary", jsonFilename: "tstatSum", method: .GET),
-    HTTPStubInfo(url: "/1/group", jsonFilename: "group", method: .GET),
-    HTTPStubInfo(url: "/ea/devices", jsonFilename: "eaDevices", method: .GET),
-    HTTPStubInfo(url: "/ea/devices/ls", jsonFilename: "eaDevicesLs", method: .GET),
     HTTPStubInfo(url: "/graphql", jsonFilename: "", method: .POST)
 ]
 struct graphQuery {
@@ -39,7 +34,6 @@ struct graphQuery {
 
 let graphDict = [
     graphQuery(queryName: "RootModelHomeSettings",jsonResponseFile: "RootModelHomeSettings"),
-    graphQuery(queryName: "Vacations",jsonResponseFile:"vacations"),
     graphQuery(queryName:"HomeDevices",jsonResponseFile:"HomeDevices")
 ]
 
